@@ -1,0 +1,84 @@
+html {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Nunito, Calibri, sans-serif;
+    font-size: 2.0vw;
+}
+
+p {
+    text-align: justify;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    font-weight: bold;
+    margin-top: 6vh;
+}
+
+td {
+    width: 1.8em;
+    height: 1.8em;
+    text-align: center;
+    border: 3px solid black;
+}
+
+select {
+    font-weight: bold;
+    border: 5px solid black;
+    font-size: 2.0vw;
+    font-family: Nunito, Calibri, sans-serif;
+}
+
+button {
+    color: black;
+    margin: 10px;
+    font-size: 2.0vw;
+    font-family: Nunito, Calibri, sans-serif;
+}
+
+input {
+    color: black;
+    margin: 10px;
+    font-size: 2.0vw;
+    font-family: Nunito, Calibri, sans-serif;
+}
+
+.obstacle {
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+}
+
+.bulb::before {
+    content: "💡";
+}
+.bulb {
+    background-color: yellow !important;
+}
+
+.intersect {
+    background-color: red !important;
+}
+
+.free {
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+#timerdisplay {
+    margin: auto;
+    width: 40%;
+    padding: 0.8em 0;
+    color: black;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+#savediv {
+    justify-content: right;
+}

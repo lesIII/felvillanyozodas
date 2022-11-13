@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Felvillanyozódás</title>
+</head>
+<body>
+    <div id="description">
+        <h1>Felvillanyozódás</h1>
+        <p>
+            Nekeresdországban Nevenincs királynak egyik szeme sír, a másik nevet. Nevet, mert végre elkészült a hatalmas kacsalábon forgó palotája, sok-sok tágas szobával és folyosóval. Ugyanakkor sír is, mert ezeket a helyiségeket be kell világítani és melegen kell tartani, azonban az aktuális rezsiemelkedés őt is érinti. Itt az ideje tehát elgondolkodni, hogy pontosan hová is helyezzünk el villanykörtéket, hogy minden megfelelően be legyen világítva; ugyanakkor csak oda helyezzünk el izzót, ahol ténylegesen szükség is van rá.
+        </p>
+        <h2>A játék leírása</h2>
+        <ul>
+            <li>A királynak négyzet alapú szobái vannak, amelyek fekete és fehér cellákból állnak.</li>
+            <li>A fehér cellákba villanykörtéket lehet elhelyezni.</li>
+            <li>A villanykörtékből a fény átlósan nem terjed, csak az adott sor és oszlop mentén.</li>
+            <li>A fekete cellákon valamilyen tereptárgy van, ami akadályozza a fény terjedését.</li>
+            <li>A fekete cellák opcionálisan egy egész számot is tartalmazhatnak 0-tól 4-ig. Ez azt jelzi, hogy hány szomszédos (alul, felül, jobbra, balra) cella tartalmaz villanykörtét. Ha van ilyen szám, akkor be kell tartani!</li>
+            <li>Két villanykörte soha nem világíthatja meg egymást!</li>
+            <li>A játék célja a villanykörtéket úgy elhelyezni, hogy minden fehér cellát megvilágítsanak.</li>
+            <li>A játékot egy játékos játssza, amíg meg nem oldja a rejtvényt, tehát több játékos egyidejű kezeléséről vagy körökre osztásról nem kell gondoskodni.</li>
+        </ul>
+        <button id="play">Play!</button>
+    </div>
+    <div id="game_mechanics">
+        <div id="timerdisplay">  
+            <span id="mins">00</span>:
+            <span id="secs">00</span>:
+            <span id="ms">000</span>
+        </div>
+        <div id="savediv">
+            <button id="savebutton">Save game</button>
+        </div>
+        <div id="savedgames">
+            <h3>Saved games</h3>
+            <ul id="saves"></ul>
+        </div>
+        <div id="map"></div>
+        <h2 id="res"></h2><br>
+        <select name="maps">
+            <option value="0">Please choose your map</option>
+        </select>
+        <div id="scorediv">
+            Name: <input type="text" value="" id="name"><button id="againbutton">Save score and play again</button>
+        </div>
+        <div id="highscores">
+            <h3>Highscores</h3>
+            <ol>
+            </ol>
+        </div>
+        <button id="editorbutton">Map editor</button>
+        <div id="editor"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
