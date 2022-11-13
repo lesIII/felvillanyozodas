@@ -23,26 +23,26 @@ td {
     width: 1.8em;
     height: 1.8em;
     text-align: center;
-    border: 3px solid black;
+    border: 0.25vw solid black;
 }
 
 select {
     font-weight: bold;
-    border: 5px solid black;
+    border: 0.25vw solid black;
     font-size: 2.0vw;
     font-family: Nunito, Calibri, sans-serif;
 }
 
 button {
     color: black;
-    margin: 10px;
+    margin: 1vw;
     font-size: 2.0vw;
     font-family: Nunito, Calibri, sans-serif;
 }
 
 input {
     color: black;
-    margin: 10px;
+    margin: 1vw;
     font-size: 2.0vw;
     font-family: Nunito, Calibri, sans-serif;
 }
@@ -50,7 +50,7 @@ input {
 .obstacle {
     background-color: black;
     color: white;
-    border: 3px solid black;
+    border: 0.25vw solid black;
 }
 
 .bulb::before {
@@ -78,7 +78,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid black;
+    border: 0.25vw solid black;
 }
 
 #savediv {
